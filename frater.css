@@ -1,0 +1,49 @@
+#allContents{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#allSources > li{
+    padding-top: 10px;
+}
+
+#allSources {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.frater-logo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.source-logo {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.flag-icon {
+    margin-right: 5px;
+}
+
+.source-title {
+    padding-left: 10px;
+}
+
+.header-label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #9d9d9d;
+}
+
+ul.dropdown-menu{
+    overflow:scroll;
+}
+
+ul#countryList{
+    height: 320px;
+}​

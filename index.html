@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frater</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="frater.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand frater-logo" href="/frater">FRATER</a>
+        </div>
+        <form class="navbar-form navbar-right">
+            <label class="header-label">A sua localização:&nbsp;</label>
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" id="myLocation" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">...a detetar</button>
+                    <ul id="countryList" class="dropdown-menu" role="menu">
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
+
+<div id="allContents" class="list-group"></div>
+
+<section>
+    <p class="source-title">Fontes locais</p>
+<ul id="allSources" class="list-inline"></ul>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script src="data.js"></script>
+<script src="plain.js"></script>
+<script src="context.js"></script>
+<script src="frater.js"></script>
+<script>
+    init();
+</script>
+</body>
+</html>
