@@ -253,15 +253,21 @@ function printArticlesOn(arts,id){
     element.innerHTML=html;
 }
 
-function renderSource(sauce){
-    var result = "<li>";
-    result += "<a target=\"_blank\" class=\"list-group-item\" href=\"" + sauce.url + "\">";
+function renderSourceOnly(sauce){
+    var result = "";
     if(sauce.image){
         result += "<img class=\"list-group-item-text source-logo\" src=\"" + sauce.image + "\"</img>";
     }
     if(sauce.name){
         result += "<span class=\"list-group-item-heading\">" + sauce.name + "</span>";
     }
+    return result;
+}
+
+function renderSource(sauce){
+    var result = "<li>";
+    result += "<a target=\"_blank\" class=\"list-group-item\" href=\"" + sauce.url + "\">";
+    result = renderSourceOnly(sauce);
     result += "</a>";
     result += "</li>";
     return result;
