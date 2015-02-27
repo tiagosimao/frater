@@ -15,7 +15,7 @@
 <nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand frater-logo" href="/frater">FRATER</a>
+            <a class="navbar-brand frater-logo" href="/frater">FRATER<span class="frater-slogan">Lusofonia global, online desde 1919</span></a>
         </div>
         <form class="navbar-form navbar-right">
             <label class="header-label">A sua localização:&nbsp;</label>
@@ -30,9 +30,27 @@
     </div>
 </nav>
 
-<div id="allContents" class="list-group"></div>
+<section class="container">
+    <p id="about-local" class="source-title"></p>
+    <div id="allContents" class="list-group">
+        <p>A carregar fontes de informação</p>
+        <div class="progress">
+            <div id="loadingSourcesBar" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                <span id="loadingSources" class="sr-only">A carregar fontes de informação</span>
+            </div>
+        </div>
+        <p>A detectar localização</p>
+        <span id="loadingLocationError"></span>
+        <div class="progress">
+            <div id="loadingLocationBar" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                <span id="loadingLocation"></span>
+            </div>
+        </div>
+    </div>
+</section>
 
-<section>
+
+<section class="container">
     <p class="source-title">Fontes locais</p>
 <ul id="allSources" class="list-inline"></ul>
 </section>
@@ -42,6 +60,7 @@
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script src="data.js"></script>
 <script src="plain.js"></script>
+<script src="date.js"></script>
 <script src="context.js"></script>
 <script src="frater.js"></script>
 <script>

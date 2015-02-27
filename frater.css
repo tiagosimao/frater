@@ -1,3 +1,13 @@
+.col-md-11{
+    border:none;
+    background-color: transparent;
+}
+
+.col-md-1{
+    border:none;
+    background-color: transparent;
+}
+
 #allContents{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -17,6 +27,23 @@
     font-weight: 300;
     font-size: 30px;
     letter-spacing: 4px;
+}
+
+.frater-slogan{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:200;
+    font-size: 12px;
+    color: #888888;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+span.glyphicon-share {
+    font-size: 2.0em;
+}
+
+.share-container{
+    padding-top: 20px;
 }
 
 .source-logo {
@@ -46,4 +73,42 @@ ul.dropdown-menu{
 
 ul#countryList{
     height: 320px;
-}​
+}
+
+h2.list-group-item-heading{
+    font-weight:800;
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+
+p.list-group-item-text{
+    font-weight:400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 10px;
+}
+
+div.share-container{
+    padding-top: 30px;
+}
+
+span.glyphicon-share{
+    color: white;
+    font-size: 35px;
+}
+
+button.share-button{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #267bb5;
+    border:none;
+    box-shadow:none;
+    margin-bottom: 10px;
+}
+
+.frater-article{
+    border-bottom: 3px solid #86b6d6;
+}
+
